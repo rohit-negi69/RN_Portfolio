@@ -1,5 +1,7 @@
 # Rohit Negi — Portfolio
 
+**🔴 Live: [rn-portfolio-5fwu4y3p0-rohit-negi69s-projects.vercel.app](https://rn-portfolio-5fwu4y3p0-rohit-negi69s-projects.vercel.app)**
+
 Personal portfolio for **Rohit Negi** — Machine Learning Engineer & Explainable AI practitioner. Built with plain HTML/CSS/JavaScript: no frameworks, no build step, deployable anywhere static files are served.
 
 ## ✨ Features
@@ -32,7 +34,7 @@ python3 -m http.server 8080
 
 ## 🌐 Deploy
 
-Drag the folder into [Netlify Drop](https://app.netlify.com/drop), or push to GitHub and enable GitHub Pages. No build settings needed.
+Currently deployed on **Vercel**. Alternatives: drag the folder into [Netlify Drop](https://app.netlify.com/drop), or enable GitHub Pages. No build settings needed.
 
 ## 📄 License
 
