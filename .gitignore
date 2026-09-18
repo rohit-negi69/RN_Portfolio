@@ -1,0 +1,5 @@
+# Preview build artifacts (generated, not source)
+.freebuff/
+
+# OS noise
+.DS_Store

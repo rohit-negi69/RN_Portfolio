@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohit Negi — ML Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Rohit Negi — B.Tech CSE student & Machine Learning engineer specializing in Explainable AI, model deployment and full-stack ML platforms." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress"><div class="scroll-progress-bar" id="scrollProgressBar"></div></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">RN<span>.</span></div>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Background -->
+  <div class="bg-grid"></div>
+  <canvas id="particles"></canvas>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="logo">RN<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+      <p class="hero-hi fade-up">👋 Hello, I'm</p>
+      <h1 class="hero-name fade-up d1">Rohit Negi</h1>
+      <div class="typing-wrap fade-up d2">
+        <span class="typing-text" id="typewriter"></span><span class="type-cursor">|</span>
+      </div>
+      <p class="hero-sub fade-up d3">
+        Building <strong>explainable</strong>, <strong>production-grade</strong> ML systems — from data to deployment.
+      </p>
+      <div class="hero-badges fade-up d4">
+        <span class="badge">🧠 Machine Learning</span>
+        <span class="badge">🔍 Explainable AI</span>
+        <span class="badge">🚀 Model Deployment</span>
+      </div>
+      <div class="hero-cta fade-up d5">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="assets/Rohit-Resume.pdf" class="btn btn-outline" download="Rohit-Negi-Resume.pdf">📄 Resume</a>
+        <button class="btn btn-ai" id="heroAskAi">✨ Ask AI</button>
+      </div>
+      <div class="hero-stats fade-up d6">
+        <div class="stat"><span class="stat-num" data-count="85.0" data-suffix="%">0%</span><span class="stat-label">ML Accuracy</span></div>
+        <div class="stat"><span class="stat-num" data-count="23" data-suffix="x">0x</span><span class="stat-label">Deployment Speedup</span></div>
+        <div class="stat"><span class="stat-num" data-count="100" data-suffix="+">0+</span><span class="stat-label">DSA Problems</span></div>
+        <div class="stat"><span class="stat-num" data-count="3" data-suffix="rd">0</span><span class="stat-label">SIH Hackathon</span></div>
+      </div>
+      </div>
+      <div class="hero-photo reveal" aria-hidden="true">
+        <div class="photo-ring"></div>
+        <img src="assets/Rohit-Photo.jpg" alt="Rohit Negi" loading="eager">
+        <span class="photo-chip photo-chip-1">🧠 ML Engineer</span>
+        <span class="photo-chip photo-chip-2">🔍 XAI</span>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint"><span></span></a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2 class="section-title reveal">About <span class="accent">Me</span></h2>
+    <div class="about-grid">
+      <div class="about-card glass reveal">
+        <div class="about-avatar">RN</div>
+        <div class="about-info">
+          <p>
+            I'm a <strong>B.Tech Computer Science & Engineering</strong> student at Haridwar University with hands-on
+            industry internship experience in <strong>Machine Learning, Explainable AI (XAI)</strong>, and
+            <strong>full-stack model deployment</strong>.
+          </p>
+          <p>
+            I build end-to-end ML platforms — from data preprocessing and model training to
+            <strong>SHAP-driven explainability</strong>, Flask integration and serverless deployment on Vercel.
+          </p>
+          <p>
+            Currently seeking <strong>Machine Learning Engineer</strong> or software engineering roles.
+          </p>
+        </div>
+      </div>
+      <div class="about-highlights">
+        <div class="highlight-card glass reveal d1" data-tilt>
+          <span class="highlight-icon">📍</span>
+          <div><h4>Based in</h4><p>Faridabad, Haryana, India</p></div>
+        </div>
+        <div class="highlight-card glass reveal d2" data-tilt>
+          <span class="highlight-icon">🎓</span>
+          <div><h4>Studying</h4><p>B.Tech CSE @ Haridwar University (2023–2027)</p></div>
+        </div>
+        <div class="highlight-card glass reveal d3" data-tilt>
+          <span class="highlight-icon">💼</span>
+          <div><h4>Experience</h4><p>AI/ML Intern @ Aarsh AI Technologies</p></div>
+        </div>
+        <div class="highlight-card glass reveal d4" data-tilt>
+          <span class="highlight-icon">🎯</span>
+          <div><h4>Focus</h4><p>ML Engineer / Software Engineering roles</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h2 class="section-title reveal">Work <span class="accent">Experience</span></h2>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass" data-tilt>
+          <div class="timeline-date">Jun 2026 — Jul 2026 · New Delhi</div>
+          <h3>AI & ML Intern</h3>
+          <h4>Aarsh AI Technologies</h4>
+          <ul>
+            <li>2-month industry internship in production AI/ML development.</li>
+            <li>Built an <strong>Employee Attrition Prediction & Retention Platform</strong> with an end-to-end Python/Scikit-learn pipeline.</li>
+            <li>Implemented <strong>SHAP-based Explainable AI</strong> to interpret predictions and surface key attrition factors.</li>
+            <li>Developed a <strong>Flask web dashboard</strong> for real-time risk scoring, deployed live on <strong>Vercel</strong>.</li>
+          </ul>
+          <div class="tags"><span>Python</span><span>Scikit-learn</span><span>SHAP</span><span>Flask</span><span>Vercel</span></div>
+        </div>
+      </div>
+      <div class="timeline-item reveal d1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass" data-tilt>
+          <div class="timeline-date">Feb 2025 · Remote</div>
+          <h3>Machine Learning Intern</h3>
+          <h4>Prodigy InfoTech</h4>
+          <ul>
+            <li>1-month intensive ML internship, completed with <strong>outstanding remarks</strong>.</li>
+            <li>Worked the full ML pipeline: preprocessing, feature engineering, EDA, training & evaluation.</li>
+            <li>Implemented and benchmarked supervised algorithms with Scikit-learn & Pandas (Accuracy, Precision, Recall, F1).</li>
+          </ul>
+          <div class="tags"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>EDA</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2 class="section-title reveal">Featured <span class="accent">Projects</span></h2>
+    <div class="projects-grid">
+      <article class="project-card glass reveal" data-tilt>
+        <div class="project-icon">🧑‍💼</div>
+        <h3>Employee Attrition Prediction & Retention Platform</h3>
+        <p>Full-stack ML platform predicting employee turnover with explainable, personalized retention strategies.</p>
+        <ul class="project-points">
+          <li>🎯 <strong>85.0% accuracy</strong>, 77.3% ROC-AUC with 8+ benchmarked algorithms, SMOTE & 5-fold CV</li>
+          <li>⚡ Optimized deployability <strong>23x</strong> — 61MB ensemble distilled to a 2.6MB calibrated model</li>
+          <li>🔍 SHAP feature attribution, fairness checks & automated recommendation engine</li>
+        </ul>
+        <div class="tags"><span>Python</span><span>Flask</span><span>XGBoost</span><span>SHAP</span><span>Vercel</span></div>
+      </article>
+      <article class="project-card glass reveal d1" data-tilt>
+        <div class="project-icon">📊</div>
+        <h3>IBM HR Analytics Interactive Dashboard</h3>
+        <p>Interactive Tableau BI dashboard tracking 1,470 employee records for workforce insights.</p>
+        <ul class="project-points">
+          <li>📈 Treemaps, heatmaps & dual-line charts across demographics and tenure (avg 7.0 yrs)</li>
+          <li>💰 Salary analysis across 9 job roles ($2.6k → $18k+) surfacing compensation disparities</li>
+          <li>👥 Gender split (60/40) and education discipline deep-dives for HR strategy</li>
+        </ul>
+        <div class="tags"><span>Tableau</span><span>EDA</span><span>BI</span></div>
+      </article>
+      <article class="project-card glass reveal d2" data-tilt>
+        <div class="project-icon">🎵</div>
+        <h3>Spotify Music Recommendation System</h3>
+        <p>Content-based music recommender using KNN on Spotify audio features with live API enrichment.</p>
+        <ul class="project-points">
+          <li>🎧 K-Nearest Neighbors on danceability, energy, tempo & valence features</li>
+          <li>🔗 Spotify Web API (Spotipy) for album art, 30s previews & direct links</li>
+          <li>🐳 Dockerized with fuzzy search & real-time inference on Streamlit</li>
+        </ul>
+        <div class="tags"><span>Python</span><span>Streamlit</span><span>Spotipy</span><span>Docker</span></div>
+      </article>
+      <article class="project-card glass reveal d3" data-tilt>
+        <div class="project-icon">🐱🐶</div>
+        <h3>Cats vs Dogs Image Classification</h3>
+        <p>CNN binary image classifier built with TensorFlow/Keras and OpenCV preprocessing.</p>
+        <ul class="project-points">
+          <li>🖼️ Data augmentation & dropout regularization to fight overfitting</li>
+          <li>📉 Tracked train/validation loss curves to optimize convergence</li>
+        </ul>
+        <div class="tags"><span>TensorFlow</span><span>Keras</span><span>CNN</span><span>OpenCV</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2 class="section-title reveal">Technical <span class="accent">Skills</span></h2>
+    <div class="skills-grid">
+      <div class="skill-group glass reveal">
+        <h3>💻 Languages</h3>
+        <div class="tags tags-lg">
+          <span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">SQL</span>
+          <span class="skill-tag">JavaScript</span><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span>
+        </div>
+      </div>
+      <div class="skill-group glass reveal d1">
+        <h3>🤖 ML & Deep Learning</h3>
+        <div class="tags tags-lg">
+          <span class="skill-tag">Scikit-learn</span><span class="skill-tag">XGBoost</span><span class="skill-tag">LightGBM</span>
+          <span class="skill-tag">SHAP (XAI)</span><span class="skill-tag">TensorFlow</span><span class="skill-tag">Keras</span>
+          <span class="skill-tag">CNN</span><span class="skill-tag">OpenCV</span><span class="skill-tag">Ensembles</span>
+        </div>
+      </div>
+      <div class="skill-group glass reveal d2">
+        <h3>📈 Data Analysis & Viz</h3>
+        <div class="tags tags-lg">
+          <span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span><span class="skill-tag">Plotly</span>
+          <span class="skill-tag">Matplotlib</span><span class="skill-tag">Seaborn</span><span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Excel</span>
+        </div>
+      </div>
+      <div class="skill-group glass reveal d3">
+        <h3>🛠 Tools & Platforms</h3>
+        <div class="tags tags-lg">
+          <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">Docker</span>
+          <span class="skill-tag">Vercel</span><span class="skill-tag">Flask</span><span class="skill-tag">Streamlit</span>
+          <span class="skill-tag">Jupyter</span><span class="skill-tag">Oracle Cloud</span><span class="skill-tag">Linux</span>
+        </div>
+      </div>
+      <div class="skill-group glass reveal d4 full-width">
+        <h3>🧩 Core Competencies</h3>
+        <div class="tags tags-lg">
+          <span class="skill-tag">DSA</span><span class="skill-tag">OOP</span><span class="skill-tag">Model Distillation</span>
+          <span class="skill-tag">System Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <h2 class="section-title reveal">Educa<span class="accent">tion</span></h2>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass" data-tilt>
+          <div class="timeline-date">2023 — 2027 (Expected)</div>
+          <h3>B.Tech, Computer Science & Engineering</h3>
+          <h4>Haridwar University</h4>
+          <p>CGPA: <strong>7.00/10.00</strong></p>
+          <div class="tags"><span>DSA</span><span>OOP</span><span>Machine Learning</span><span>Deep Learning</span><span>Computer Vision</span></div>
+        </div>
+      </div>
+      <div class="timeline-item reveal d1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass" data-tilt>
+          <div class="timeline-date">2021 — 2023</div>
+          <h3>Senior Secondary (CBSE)</h3>
+          <h4>St. John Public School</h4>
+          <p>Percentage: <strong>83.0%</strong></p>
+        </div>
+      </div>
+      <div class="timeline-item reveal d2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass" data-tilt>
+          <div class="timeline-date">2019 — 2021</div>
+          <h3>Secondary (CBSE)</h3>
+          <h4>St. John Public School</h4>
+          <p>Percentage: <strong>91.0%</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="section">
+    <h2 class="section-title reveal">Certifications & <span class="accent">Achievements</span></h2>
+    <div class="certs-grid">
+      <div class="cert-card glass reveal"><span class="cert-icon">🏅</span><h4>Oracle Cloud Infrastructure 2025 Certified Foundations Associate</h4><p>Oracle</p></div>
+      <div class="cert-card glass reveal d1"><span class="cert-icon">🤖</span><h4>Building RAG Agents with LLMs</h4><p>NVIDIA</p></div>
+      <div class="cert-card glass reveal d2"><span class="cert-icon">🛡️</span><h4>CyberOps Associate</h4><p>Cisco Networking Academy</p></div>
+      <div class="cert-card glass reveal d3"><span class="cert-icon">🧠</span><h4>Machine Learning with Python — Certificate of Completion</h4><p>Prodigy InfoTech</p></div>
+      <div class="cert-card glass reveal d4"><span class="cert-icon">🌐</span><h4>HTML, CSS & JavaScript for Web Developers</h4><p>Coursera</p></div>
+      <div class="cert-card glass reveal d5"><span class="cert-icon">🎓</span><h4>NPTEL Elite Certification (70% Score)</h4><p>Merit scholarship ₹1,100 — awarded twice</p></div>
+    </div>
+    <div class="achievements glass reveal">
+      <h3>🏆 Achievements & Extracurricular</h3>
+      <ul>
+        <li>🥇 <strong>3rd Position — Internal Smart India Hackathon (SIH) 2024</strong> at Haridwar University & Ministry of HRD / IIC — Certificate of Recognition for an innovative technological solution.</li>
+        <li>🗑️ <strong>3rd Position — TechSangram</strong> (University-Level): IoT Smart Waste Management Bin with automated sensor-based sorting & monitoring.</li>
+        <li>💻 <strong>100+ DSA problems solved</strong> on LeetCode.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2 class="section-title reveal">Get In <span class="accent">Touch</span></h2>
+    <p class="contact-sub reveal">Let's build something intelligent together. I'm open to ML Engineer & software roles, internships, and collaborations.</p>
+    <div class="contact-grid">
+      <a href="mailto:rnegilxm16@gmail.com" data-fact="email" data-fact-kind="mailto" class="contact-card glass reveal" data-tilt>
+        <span class="contact-icon">📧</span><h4>Email</h4><p data-fact="email">rnegilxm16@gmail.com</p>
+      </a>
+      <a href="tel:+918130206537" data-fact="phoneHref" data-fact-kind="tel" class="contact-card glass reveal d1" data-tilt>
+        <span class="contact-icon">📱</span><h4>Phone</h4><p data-fact="phoneDisplay">+91 81302 06537</p>
+      </a>
+      <a href="https://linkedin.com/in/rohit-negi-b55709290" data-fact="linkedin" target="_blank" rel="noopener" class="contact-card glass reveal d2" data-tilt>
+        <span class="contact-icon">💼</span><h4>LinkedIn</h4><p>rohit-negi</p>
+      </a>
+      <a href="https://github.com/rohit-negi69" data-fact="github" target="_blank" rel="noopener" class="contact-card glass reveal d3" data-tilt>
+        <span class="contact-icon">🐙</span><h4>GitHub</h4><p>rohit-negi69</p>
+      </a>
+      <a href="https://wa.me/918130206537?text=Hi%20Rohit!%20I%20saw%20your%20portfolio%20and%20I%27d%20love%20to%20connect%20about%20an%20opportunity." data-fact="whatsapp" target="_blank" rel="noopener" class="contact-card glass whatsapp-card reveal d4" data-tilt>
+        <span class="contact-icon">💬</span><h4>WhatsApp</h4><p>Chat instantly</p>
+      </a>
+    </div>
+    <div class="contact-cta reveal">
+      <a href="assets/Rohit-Resume.pdf" class="btn btn-primary" download="Rohit-Negi-Resume.pdf">⬇ Download Resume</a>
+      <a href="https://wa.me/918130206537?text=Hi%20Rohit!%20I%20saw%20your%20portfolio%20and%20I%27d%20love%20to%20connect%20about%20an%20opportunity." data-fact="whatsapp" target="_blank" rel="noopener" class="btn btn-whatsapp">💬 Chat on WhatsApp</a>
+    </div>
+
+    <!-- Contact form -->
+    <form class="contact-form glass reveal" id="contactForm" action="https://formsubmit.co/ajax/rnegilxm16@gmail.com" method="POST">
+      <h3>💬 Send me a message</h3>
+      <p class="form-sub">It lands straight in my inbox — I usually reply within a day.</p>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-field">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" placeholder="you@example.com" required />
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="cf-subject">Subject</label>
+        <input type="text" id="cf-subject" name="_subject" placeholder="Job opportunity, collaboration, or just saying hi..." />
+      </div>
+      <div class="form-field">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
+      </div>
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_replyto" value="" />
+      <button type="submit" class="btn btn-primary" id="cfSubmit"><span class="btn-label">Send Message 🚀</span></button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Rohit Negi · Built with ❤ and a lot of coffee</p>
+  </footer>
+
+  <!-- Chatbot -->
+  <a href="https://wa.me/918130206537?text=Hi%20Rohit!%20I%20saw%20your%20portfolio%20and%20I%27d%20love%20to%20connect%20about%20an%20opportunity." data-fact="whatsapp" target="_blank" rel="noopener" class="wa-fab" id="waFab" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M16.004 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.26.6 4.46 1.72 6.4L3.2 28.8l6.6-1.68a12.74 12.74 0 0 0 6.2 1.6h.004c7.06 0 12.8-5.74 12.8-12.8s-5.74-12.72-12.8-12.72zm0 23.36h-.004a10.6 10.6 0 0 1-5.4-1.48l-.388-.23-4.02 1.02 1.06-3.92-.252-.4a10.56 10.56 0 0 1-1.62-5.63c0-5.87 4.78-10.64 10.65-10.64 2.84 0 5.51 1.11 7.52 3.12a10.57 10.57 0 0 1 3.11 7.53c0 5.87-4.78 10.63-10.66 10.63zm5.84-7.97c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.83 1.04-1.02 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.98-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.65 0 1.56 1.14 3.07 1.3 3.28.16.21 2.24 3.42 5.42 4.79.76.33 1.35.52 1.81.67.76.24 1.46.21 2 .13.61-.09 1.89-.77 2.15-1.52.27-.74.27-1.38.19-1.52-.08-.13-.29-.21-.61-.37z"/></svg>
+    <span class="wa-fab-pulse"></span>
+    <span class="wa-fab-tooltip">Chat on WhatsApp</span>
+  </a>
+  <button class="chat-fab" id="chatFab" aria-label="Chat with AI">
+    <span class="chat-fab-icon">💬</span>
+    <span class="chat-fab-pulse"></span>
+  </button>
+  <div class="chat-window glass" id="chatWindow" aria-hidden="true">
+    <div class="chat-header">
+      <div class="chat-avatar">🤖</div>
+      <div class="chat-header-info">
+        <h4>Rohit's AI Assistant</h4>
+        <p><span class="status-dot"></span> Online · knows the full résumé</p>
+      </div>
+      <button class="chat-clear" id="chatClear" aria-label="Clear chat" title="Clear conversation">🗑️</button>
+      <button class="chat-close" id="chatClose" aria-label="Close chat">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <div class="chat-suggestions" id="chatSuggestions"></div>
+    <form class="chat-input-wrap" id="chatForm">
+      <input type="text" id="chatInput" placeholder="Ask about Rohit's skills, projects..." autocomplete="off" />
+      <button type="submit" aria-label="Send">➤</button>
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="chatbot-kb.js"></script>
+  <script src="chatbot.js"></script>
+  <script>
+    /* Fill contact links/texts from CHAT_CONFIG — the single owner of these facts. */
+    (function () {
+      var C = window.CHAT_CONFIG;
+      document.querySelectorAll('[data-fact]').forEach(function (el) {
+        var v = C[el.getAttribute('data-fact')];
+        if (!v) return;
+        var kind = el.getAttribute('data-fact-kind') || (el.hasAttribute('href') ? 'href' : 'text');
+        if (kind === 'mailto') el.setAttribute('href', 'mailto:' + v);
+        else if (kind === 'tel') el.setAttribute('href', 'tel:' + v);
+        else if (kind === 'href') el.setAttribute('href', v);
+        else el.textContent = v;
+      });
+      var form = document.getElementById('contactForm');
+      if (form) form.action = C.formEndpoint;
+    })();
+  </script>
+</body>
+</html>
